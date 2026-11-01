@@ -1,5 +1,7 @@
 # Simple HIIT Timer
 
+[![License: MIT](https://img.shields.io/github/license/apoorvsingh090/simplehiittimer)](LICENSE)
+
 A minimal, offline-first Android interval timer. Set work and rest durations and a round count,
 then follow a full-screen ring countdown that beeps at every phase change.
 
@@ -78,5 +80,4 @@ strong password before distributing builds, and never commit it.
 
 ## License
 
-No license file is included; the source is published as-is, which means all rights are reserved by
-default. Open an issue if you would like to discuss reuse.
+Released under the [MIT License](LICENSE).
