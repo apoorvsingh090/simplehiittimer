@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FF5722"
+        app:titleTextColor="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Simple HIIT Timer"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Work Time -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Time (seconds)"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnWorkMinus"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="-"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvWorkTime"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF5722"
+                    android:gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp" />
+
+                <Button
+                    android:id="@+id/btnWorkPlus"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <!-- Rest Time -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rest Time (seconds)"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnRestMinus"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="-"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvRestTime"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="#4CAF50"
+                    android:gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp" />
+
+                <Button
+                    android:id="@+id/btnRestPlus"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <!-- Rounds -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rounds"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnRoundsMinus"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="-"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvRounds"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="#2196F3"
+                    android:gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp" />
+
+                <Button
+                    android:id="@+id/btnRoundsPlus"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <!-- Options -->
+            <CheckBox
+                android:id="@+id/cbStartDelay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5-second start delay"
+                android:checked="true"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/cbVoiceCoach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voice coach"
+                android:checked="false"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Presets -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quick Presets"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnPreset1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30s / 30s - 10 rounds"
+                    android:layout_marginBottom="4dp" />
+
+                <Button
+                    android:id="@+id/btnPreset2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="40s / 20s - 8 rounds"
+                    android:layout_marginBottom="4dp" />
+
+                <Button
+                    android:id="@+id/btnPreset3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tabata 20s / 10s - 8 rounds"
+                    android:layout_marginBottom="4dp" />
+
+                <Button
+                    android:id="@+id/btnPreset4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="60s / 60s - 10 rounds"
+                    android:layout_marginBottom="4dp" />
+
+                <Button
+                    android:id="@+id/btnPreset5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Running 60s / 120s - 8 rounds"
+                    android:layout_marginBottom="4dp" />
+
+                <Button
+                    android:id="@+id/btnPreset6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sprints 15s / 45s - 10 rounds" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="START"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="#FF5722" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

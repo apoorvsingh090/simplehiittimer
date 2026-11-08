@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Simple HIIT Timer</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="no_record">No record</string>
+    <string name="best_time">Best: %1$s</string>
+    <string name="no_record_yet">No record yet</string>
+    <string name="personal_best">Personal Best</string>
+    <string name="view_scoreboard">View Scoreboard</string>
+    <string name="view_scores">View Scoreboard</string>
+    <string name="select_difficulty">Select a difficulty</string>
+    <string name="new_game">New Game</string>
+    <string name="scoreboard">Scoreboard</string>
+    <string name="hint">Hint</string>
+    <string name="check">Check</string>
+    <string name="pause">Pause</string>
+    <string name="erase">Erase</string>
+    <string name="resume">Resume</string>
+    <string name="puzzle_complete">Puzzle Complete</string>
+    <string name="congratulations_new_best">Congratulations! New personal best!</string>
+    <string name="puzzle_solved">Puzzle solved!</string>
+    <string name="clear_all_scores">Clear All Scores</string>
+    <string name="select_a_cell">Select a cell first</string>
+    <string name="this_is_a_given_cell">This is a given cell</string>
+    <string name="errors_found">Errors found! Check highlighted cells.</string>
+    <string name="no_errors">No errors found. Keep going!</string>
+    <string name="start_new_game">Start a new game? Current progress will be lost.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="game_paused">Game paused</string>
+    <string name="game_resumed">Game resumed</string>
+</resources>
