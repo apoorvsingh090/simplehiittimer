@@ -16,4 +16,4 @@ jobs:
           java-version: "17"
       - uses: gradle/actions/setup-gradle@v4
       - name: Unit tests + assemble
-        run: ./gradlew --no-daemon testDebugUnitTest assembleDebug
+        timeout-minutes: 20`n        run: ./gradlew --no-daemon --console=plain --info testDebugUnitTest assembleDebug
